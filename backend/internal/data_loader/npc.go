@@ -1,9 +1,6 @@
 package data_loader
 
 import (
-	"github.com/dof-wiki/godof/parser"
-	"github.com/dof-wiki/godof/parser/tree_parser"
-	"github.com/samber/lo"
 	"pvftools/backend/common"
 	"pvftools/backend/common/consts"
 	"pvftools/backend/common/log"
@@ -14,6 +11,10 @@ import (
 	"pvftools/backend/internal/progress"
 	"pvftools/backend/model"
 	"strings"
+
+	"github.com/dof-dev/godof/parser"
+	"github.com/dof-dev/godof/parser/tree_parser"
+	"github.com/samber/lo"
 )
 
 type NpcDataLoader struct {

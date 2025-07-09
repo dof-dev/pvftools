@@ -1,7 +1,6 @@
 package data_loader
 
 import (
-	"github.com/dof-wiki/godof/parser"
 	"pvftools/backend/common"
 	"pvftools/backend/common/consts"
 	"pvftools/backend/common/ctx"
@@ -11,6 +10,8 @@ import (
 	"pvftools/backend/internal/data_source"
 	"pvftools/backend/model"
 	"strings"
+
+	"github.com/dof-dev/godof/parser"
 )
 
 type JobDataLoader struct{}

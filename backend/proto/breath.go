@@ -1,8 +1,9 @@
 package proto
 
 import (
-	"github.com/dof-wiki/godof/parser/tree_parser"
 	"pvftools/backend/common/consts"
+
+	"github.com/dof-dev/godof/parser/tree_parser"
 )
 
 type BreathCheckSkillItem struct {

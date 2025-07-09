@@ -1,9 +1,10 @@
 package api
 
 import (
-	"github.com/dof-wiki/godof/parser"
 	"pvftools/backend/common/log"
 	"pvftools/backend/internal/box"
+
+	"github.com/dof-dev/godof/parser"
 )
 
 func (a *App) GenRandomBox(params *box.BoxParams) string {

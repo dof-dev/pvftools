@@ -2,14 +2,15 @@ package api
 
 import (
 	"context"
-	"github.com/dof-wiki/godof/parser"
-	"github.com/dof-wiki/godof/parser/tree_parser"
-	"github.com/wailsapp/wails/v2/pkg/runtime"
 	"pvftools/backend/common/consts"
 	"pvftools/backend/common/ctx"
 	"pvftools/backend/internal/data_source"
 	"pvftools/backend/internal/updater"
 	"sync"
+
+	"github.com/dof-dev/godof/parser"
+	"github.com/dof-dev/godof/parser/tree_parser"
+	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
 
 // App struct

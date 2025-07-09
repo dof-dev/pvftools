@@ -1,8 +1,6 @@
 package data_loader
 
 import (
-	"github.com/dof-wiki/godof/parser"
-	"github.com/samber/lo"
 	"pvftools/backend/common"
 	"pvftools/backend/common/consts"
 	"pvftools/backend/common/log"
@@ -12,6 +10,9 @@ import (
 	"pvftools/backend/internal/data_source"
 	"pvftools/backend/internal/progress"
 	"pvftools/backend/model"
+
+	"github.com/dof-dev/godof/parser"
+	"github.com/samber/lo"
 )
 
 type EquipmentDataLoader struct {

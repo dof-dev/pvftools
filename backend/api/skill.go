@@ -2,12 +2,13 @@ package api
 
 import (
 	"fmt"
-	"github.com/dof-wiki/godof/parser"
-	"github.com/samber/lo"
 	"pvftools/backend/common/consts"
 	"pvftools/backend/dao"
 	"pvftools/backend/model"
 	"strings"
+
+	"github.com/dof-dev/godof/parser"
+	"github.com/samber/lo"
 )
 
 func (a *App) GetJobSkill(job int) ([]*model.Skill, error) {

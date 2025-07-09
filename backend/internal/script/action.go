@@ -1,10 +1,11 @@
 package script
 
 import (
-	"github.com/dof-wiki/godof/parser"
 	"pvftools/backend/common/consts"
 	"pvftools/backend/common/log"
 	"pvftools/backend/common/utils"
+
+	"github.com/dof-dev/godof/parser"
 )
 
 const (

@@ -1,11 +1,12 @@
 package world_drop
 
 import (
-	"github.com/dof-wiki/godof/parser"
-	"github.com/samber/lo"
 	"pvftools/backend/common/consts"
 	"pvftools/backend/common/log"
 	"pvftools/backend/internal/data_source"
+
+	"github.com/dof-dev/godof/parser"
+	"github.com/samber/lo"
 )
 
 type WorldDropItem struct {

@@ -1,11 +1,12 @@
 package upgrade
 
 import (
-	"github.com/dof-wiki/godof/parser/tree_parser"
-	"github.com/samber/lo"
 	"pvftools/backend/common/consts"
 	"pvftools/backend/internal/data_source"
 	"pvftools/backend/proto"
+
+	"github.com/dof-dev/godof/parser/tree_parser"
+	"github.com/samber/lo"
 )
 
 /*

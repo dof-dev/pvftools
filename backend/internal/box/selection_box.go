@@ -1,8 +1,9 @@
 package box
 
 import (
-	"github.com/dof-wiki/godof/parser"
 	"pvftools/backend/common/consts"
+
+	"github.com/dof-dev/godof/parser"
 )
 
 func GenerateSelectionBox(params *BoxParams) *parser.Parser {

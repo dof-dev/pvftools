@@ -3,7 +3,7 @@ package data_source
 import (
 	"pvftools/backend/common/setting"
 
-	"github.com/dof-wiki/godof/pvf_source"
+	"github.com/dof-dev/godof/pvf_source"
 )
 
 type IDataSource interface {

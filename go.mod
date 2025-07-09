@@ -20,7 +20,7 @@ require (
 
 require (
 	github.com/bep/debounce v1.2.1 // indirect
-	github.com/dof-wiki/godof v1.0.11
+	github.com/dof-dev/godof v1.1.0
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/glebarez/go-sqlite v1.21.2 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect

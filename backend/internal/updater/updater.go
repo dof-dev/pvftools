@@ -2,7 +2,6 @@ package updater
 
 import (
 	"fmt"
-	"github.com/tidwall/gjson"
 	"io"
 	"net/http"
 	"os"
@@ -13,6 +12,8 @@ import (
 	"pvftools/backend/internal/progress"
 	"strconv"
 	"strings"
+
+	"github.com/tidwall/gjson"
 )
 
 type Updater struct {
@@ -25,7 +26,7 @@ type Updater struct {
 }
 
 func (u *Updater) fetchVersion() {
-	url := "https://api.github.com/repos/dof-wiki/pvftools/releases/latest"
+	url := "https://api.github.com/repos/dof-dev/pvftools/releases/latest"
 	resp, err := http.Get(url)
 	if err != nil {
 		log.LogError("请求失败: %v", err)

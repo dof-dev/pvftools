@@ -1,7 +1,6 @@
 package data_loader
 
 import (
-	"github.com/dof-wiki/godof/parser"
 	"pvftools/backend/common"
 	"pvftools/backend/common/consts"
 	"pvftools/backend/common/ctx"
@@ -13,6 +12,8 @@ import (
 	"pvftools/backend/internal/progress"
 	"pvftools/backend/model"
 	"strings"
+
+	"github.com/dof-dev/godof/parser"
 )
 
 type SkillDataLoader struct {

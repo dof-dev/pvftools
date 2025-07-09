@@ -1,10 +1,11 @@
 package breath
 
 import (
-	"github.com/dof-wiki/godof/parser/tree_parser"
-	"github.com/samber/lo"
 	"pvftools/backend/common/consts"
 	"pvftools/backend/proto"
+
+	"github.com/dof-dev/godof/parser/tree_parser"
+	"github.com/samber/lo"
 )
 
 type BreathEditor struct {
