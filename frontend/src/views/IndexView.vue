@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {CheckDataUpdate, CheckUpdate, GetUserSettings, LoadData, SetUserSettings} from '../../wailsjs/go/api/App'
+import {CheckDataUpdate, CheckUpdate, GetUserSettings, LoadData, SelectDirectory, SetUserSettings} from '../../wailsjs/go/api/App'
 import {onMounted, ref} from "vue";
 import {useMessage} from 'naive-ui'
 import {data_loader, setting} from "../../wailsjs/go/models";
@@ -27,6 +27,17 @@ const save = async () => {
   try {
     await SetUserSettings(conf.value)
     message.success('保存成功')
+  } catch (e) {
+    message.error(String(e))
+  }
+}
+
+const selectDirectory = async () => {
+  try {
+    const dir = await SelectDirectory(conf.value.mode === 'file' ? conf.value.target : '')
+    if (dir) {
+      conf.value.target = dir
+    }
   } catch (e) {
     message.error(String(e))
   }
@@ -108,7 +119,7 @@ onMounted(async () => {
         </n-form-item>
         <n-form-item label="文件夹" v-if="conf.mode === 'file'">
           <n-input-group>
-            <n-button @click="">选择</n-button>
+            <n-button @click="selectDirectory">选择</n-button>
             <n-input v-model:value="conf.target"></n-input>
           </n-input-group>
         </n-form-item>

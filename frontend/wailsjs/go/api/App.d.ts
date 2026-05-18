@@ -77,6 +77,8 @@ export function SaveWorldDropData():Promise<void>;
 
 export function SearchByName(arg1:string,arg2:number):Promise<Array<api.SearchResult>>;
 
+export function SelectDirectory(arg1:string):Promise<string>;
+
 export function SetBreathBaseData(arg1:number,arg2:number,arg3:number):Promise<void>;
 
 export function SetBreathSkills(arg1:number,arg2:number,arg3:number,arg4:string,arg5:Array<proto.BreathCheckSkillItem>):Promise<void>;

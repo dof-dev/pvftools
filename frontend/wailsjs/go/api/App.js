@@ -138,6 +138,10 @@ export function SearchByName(arg1, arg2) {
   return window['go']['api']['App']['SearchByName'](arg1, arg2);
 }
 
+export function SelectDirectory(arg1) {
+  return window['go']['api']['App']['SelectDirectory'](arg1);
+}
+
 export function SetBreathBaseData(arg1, arg2, arg3) {
   return window['go']['api']['App']['SetBreathBaseData'](arg1, arg2, arg3);
 }
