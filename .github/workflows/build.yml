@@ -29,7 +29,7 @@ jobs:
           submodules: recursive
 
       - name: Build wails
-        uses: host-uk/build@v4
+        uses: host-uk/build@v4.0.0
         id: build
         with:
           build-name: ${{ matrix.build.name }}
