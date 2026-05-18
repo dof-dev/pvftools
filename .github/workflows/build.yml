@@ -12,6 +12,8 @@ env:
 
 jobs:
   build:
+    permissions:
+      contents: write
     strategy:
       # Failure in one platform build won't impact the others
       fail-fast: false
