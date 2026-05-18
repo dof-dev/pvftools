@@ -65,7 +65,8 @@ func (m *worldDropMgr) LoadData() {
 func (m *worldDropMgr) renderWorldDropData() []int {
 	data := make([]int, 0)
 	for level := 1; level <= 200; level++ {
-		data = append(data, level)
+		// 世界掉落每组格式为: level, 0, id, rate, ..., -1
+		data = append(data, level, 0)
 		for _, item := range m.GetItems(level) {
 			data = append(data, item.Id, item.Rate)
 		}

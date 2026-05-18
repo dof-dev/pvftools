@@ -45,7 +45,7 @@ export function GetFileContent(arg1:string):Promise<string>;
 
 export function GetHellDrop():Promise<Array<number>>;
 
-export function GetItemsName(arg1:Array<number>):Promise<{[key: number]: string}>;
+export function GetItemsName(arg1:Array<number>):Promise<Record<number, string>>;
 
 export function GetJobInfo():Promise<Array<model.Job>>;
 
