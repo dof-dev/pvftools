@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         build:
-          - name: 'pvftools'
+          - name: 'pvftools.exe'
             platform:  'windows/amd64'
             os: 'windows-latest'
 

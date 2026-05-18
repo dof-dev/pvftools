@@ -40,7 +40,7 @@ func NewApp() *App {
 func (a *App) Startup(_ctx context.Context) {
 	a.ctx = _ctx
 	ctx.Ctx = &_ctx
-	go a.checkUpdate()
+	//go a.checkUpdate()
 }
 
 func (a *App) checkUpdate() bool {
