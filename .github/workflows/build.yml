@@ -24,12 +24,12 @@ jobs:
     runs-on: ${{ matrix.build.os }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           submodules: recursive
 
       - name: Build wails
-        uses: dAppServer/wails-build-action@v2.2
+        uses: host-uk/build@v4
         id: build
         with:
           build-name: ${{ matrix.build.name }}
